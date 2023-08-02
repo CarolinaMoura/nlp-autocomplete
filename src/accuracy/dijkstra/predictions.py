@@ -170,7 +170,7 @@ def create_node_class(tokenizer, model, text_sentence: str, device: str):
 
 
 def get_all_predictions(
-    text_sentence, tokenizer, model, top_k=5, verbose=False
+    text_sentence, tokenizer, model, top_k=5, verbose=False, device='cpu'
 ) -> list[str]:
     """
     Args:
@@ -185,7 +185,6 @@ def get_all_predictions(
     """
     
     # send model to device
-    device = 'cuda' if torch.cuda.is_available() else 'cpu'
     model.to(device)
 
     Node, Token = create_node_class(tokenizer, model, text_sentence, device)
