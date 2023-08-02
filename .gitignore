@@ -1,4 +1,4 @@
 models/
 **/__pycache__/
 get_token_frequency.ipynb
-data/portuguese_sentences.txt
+data/
