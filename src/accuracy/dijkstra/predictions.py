@@ -4,6 +4,8 @@ from dijkstra.helpers.min_heap import Min_heap
 
 def create_functions(tokenizer, model, device='cpu'):
 
+    # i don't know how to use global variables
+    # please fix this. you're smarter.
     chamadas = [0]
 
     def encode(
