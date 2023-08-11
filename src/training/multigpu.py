@@ -1,8 +1,8 @@
 # ---------------- parameters go here ----------------
-path_to_tokenized_dataset = "psa_small/end_token/train_tokens"
+path_to_tokenized_dataset = "../../data/random_tokens_train_tokens.pt"
 path_to_model_checkpoint = "bert-base-multilingual-cased"
 save_every = 1
-total_epochs = 1
+total_epochs = 3
 batch_size = 32
 
 # ---------------- actual code starts here ----------------

@@ -9,6 +9,7 @@ class MyTrainDataset(Dataset):
             path: path to tokenized dataset.
         """
         self.data = torch.load(path)
+        print(self.data['labels'].shape)
 
     def __len__(self):
         return len(self.data["input_ids"])
